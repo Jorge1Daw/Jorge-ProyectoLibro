@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día del Libro</title>
+    <link rel="stylesheet" href="normalize.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&
+    display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="../index.html">
+                    <h1 class="logo_nombre no-margin centrar-texto">Librería<span class="logo_bold"> El Búho Lector</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="DiaLibro.html" class="navegacion_enlace">Día Libro</a>
+                    <a href="Premios.html" class="navegacion_enlace">Premios</a>
+                    <a href="contacto.html" class="navegacion_enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="header_texto">
+            <h2 class="no-margin">Día del Libro</h2>
+            <p class="no-margin">Qué libros recomendamos y sus autores</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto">Contacto</h3>
+
+        <div class="contacto-background"></div>
+        
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input class="campo__field" type="text" placeholder="Tu nombre" id="nombre">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="email">E-mail</label>
+                <input class="campo__field" type="email" placeholder="Tu E-mail" id="email">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea class="campo__field campo__field--textarea" type="textarea" id="mensaje"></textarea>
+            </div>
+
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton_primario">
+            </div>
+        </form>
+        
+    </main>
+
+    <footer class="footer">
+    <div class="contenedor">
+        <div class="barra">
+                <a class="logo" href="../index.html">
+                    <p class="logo_nombre no-margin centrar-texto">Librería<span class="logo_bold"> El Búho Lector</span></p>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="DiaLibro.html" class="navegacion_enlace textoblanco">Día Libro</a>
+                    <a href="Premios.html" class="navegacion_enlace textoblanco">Premios</a>
+                    <a href="contacto.html" class="navegacion_enlace textoblanco">Contacto</a>
+                </nav>
+            </div>
+    </div>
+    </footer>
+    
+    
+</body>
+</html>

@@ -1,0 +1,261 @@
+:root{
+    --fuenteheading:'PT Sans',sans-serif;
+    --fuenteParrafos:'Open Sans',sans-serif;
+
+    --primario:#784D3C;
+    --gris:#e1e1e1;
+    --blanco:#ffffff;
+    --negro:#000000;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*1 rem(Tamaño que viene determinado por el dispositivo desde que estamos viendo la página) y es igual a 10px*/
+
+}
+
+*,*:before,*:after{
+box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.contenedor{
+    margin: 0 auto;
+    width: 80%; 
+
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--fuenteheading);
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem ;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding:0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+
+.header{
+    background-image: url(../Imagenes/FotoIndex.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center ;
+}
+
+.header_texto{
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+}
+
+@media (min-width:768px){
+    .header_texto{
+        margin-top: 15rem;
+    }
+    
+}
+
+@media (min-width:768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo{
+    color: var(--blanco);
+}
+
+.logo_nombre{
+font-weight: 400;
+}
+
+.logo_bold{
+font-weight: 700;
+}
+
+@media (min-width:768px){
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.navegacion_enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--negro);
+}
+
+@media (min-width:768px){
+    .contenido_principal{
+      text-align: center;
+    }
+}
+
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.boton{
+    display: block;
+    font-family: var(--fuenteheading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform:uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+.boton:hover{
+    cursor: pointer;
+}
+@media(min-width:768px){
+    .boton{
+        display:inline-block;
+    }
+}
+
+.boton_primario{
+    background-color: var(--negro);
+}
+
+.boton_secundario{
+    background-color: var(--primario);
+}
+
+.libreria{
+    margin-bottom: 550px;
+    
+}
+
+.librerias{
+    list-style: none;
+}
+
+
+
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+.footer p{
+    font-family: var(--fuenteheading);
+    font-size: 30px;
+}
+
+.textoblanco{
+    color: var(--blanco);
+}
+
+/**DiaLIbro**/
+
+
+    .diaLibro_imagen{
+        padding-top: 2rem;
+        text-align: center;
+    }
+   
+
+
+/**Premio**/
+.premio{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+.premio:last-of-type{
+    border: none;
+}
+
+/**Contacto**/
+.contacto-background{
+   background-image: url(../Imagenes/Anuncio.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario{
+    background-color: var(--blanco);
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo{
+    display: flex;
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+
+.campo__field--textarea{
+    height: 20rem;
+    margin-bottom: 10px;
+}
+
+.infoPremio{
+    font-weight: bold;
+    font-style: var(--negro);
+}
+
